@@ -4,7 +4,7 @@ return {{"tpope/vim-fugitive"}, {
         require("gitsigns").setup({
             current_line_blame = true,
 
-            on_attach = function()
+            on_attach = function(bufnr)
                 local gitsigns = require('gitsigns')
 
                 local function map(mode, l, r, opts)
