@@ -1,0 +1,73 @@
+[window]
+
+dimensions = { columns = 180, lines = 60 }
+
+# decorations = "Buttonless"
+
+dynamic_padding = true
+
+opacity = 0.75
+blur = true
+
+padding = { x = 2, y = 3 }
+
+option_as_alt = "OnlyRight"
+
+[font]
+
+# Normal font style
+normal = { family = "MesloLGS NF", style = "Regular" }  # Default for Linux/BSD: "monospace", Regular
+
+# Font size in points
+size = 12  # Default: 11.25
+
+[selection]
+
+# Characters that are used as separators for "semantic words" in Alacritty
+# semantic_escape_chars = ",│`|:\"' ()[]{}<>\\t"  # Default: ",│`|:\"' ()[]{}<>\\t"
+
+# When set to true, selected text will be copied to the primary clipboard
+save_to_clipboard = true  # Default: false
+
+[mouse]
+
+# When true, the cursor is temporarily hidden when typing
+hide_when_typing = true  # Default: false
+
+[cursor]
+
+style = { shape = "Block", blinking = "Always" }
+
+# https://github.com/josean-dev/dev-environment-files/blob/main/.config/alacritty/themes/themes/coolnight.toml
+# By Josean Martinez
+# Inspired by aura.toml
+
+# Default colors
+[colors.primary]
+background = '#011423'
+foreground = '#CBE0F0'
+
+# Colors the cursor will use if `custom_cursor_colors` is true
+[colors.cursor]
+text = "#011423"
+cursor = "#47FF9C"
+
+[colors.normal]
+black = "#214969"
+red = "#E52E2E"
+green = "#44FFB1"
+yellow = "#FFE073"
+blue = "#0FC5ED"
+magenta = "#a277ff"
+cyan = "#24EAF7"
+white = "#24EAF7"
+
+[colors.bright]
+black = "#214969"
+red = "#E52E2E"
+green = "#44FFB1"
+yellow = "#FFE073"
+blue = "#A277FF"
+magenta = "#a277ff"
+cyan = "#24EAF7"
+white = "#24EAF7"
