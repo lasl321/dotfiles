@@ -71,6 +71,7 @@ config.font_rules = {
 config.font_size = 14
 config.warn_about_missing_glyphs = true
 -- config.freetype_load_target = "HorizontalLcd" -- https://wezfurlong.org/wezterm/config/lua/config/freetype_load_target.html
+config.line_height = 1.1
 
 -- Do not show window tab bar
 config.enable_tab_bar = false
