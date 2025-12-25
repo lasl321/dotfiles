@@ -1,18 +1,10 @@
 [user]
 	name = Luis Sotomayor
-	email = luis@zuub.com
+	email = luis.sotomayor@gmail.com
 [core]
 	excludesfile = /Users/lasl321/.gitignore_global
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	editor = nvim
-[difftool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/araxisgitmerge-w.sh \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\"
-	trustExitCode = true
-[commit]
-	template = /Users/lasl321/.stCommitMsg
 [interactive]
 	diffFilter = diff-so-fancy --patch
 [pull]
@@ -21,13 +13,6 @@
 	prune = true
 [push]
 	default = simple
-[diff]
-	tool = sourcetree
-[mergetool]
-	tool = sourcetree
-	keepBackup = false
-[merge]
-	tool = sourcetree
 [init]
 	defaultBranch = master
 [safe]
