@@ -1,25 +1,49 @@
+# Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
 brew "gh"
+# Interpreter for PostScript and PDF
 brew "ghostscript"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Simple terminal UI for git commands
 brew "lazygit"
+# Package manager for the Lua programming language
 brew "luarocks"
+# Run a Kubernetes cluster locally
 brew "minikube"
+# Fast, highly customisable system info script
 brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Manage multiple Node.js versions
 brew "nvm"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
+# Web browser
 cask "firefox"
 cask "font-monaspace"
+# Orchestrates virtual Ubuntu instances
 cask "multipass"
+# System monitor for the menu bar
 cask "stats"
+# Development environment
 cask "vagrant"
+# Virtualiser for arm64 hardware
 cask "virtualbox"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
+# Video communication and virtual meeting platform
 cask "zoom"
