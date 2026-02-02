@@ -44,3 +44,17 @@ cask "stats"
 cask "wezterm"
 # Video communication and virtual meeting platform
 cask "zoom"
+
+# -----
+# MacOS
+# -----
+
+# Tool for managing dock items
+brew "dockutil"
+
+# -----------
+# Development
+# -----------
+
+# An opinionated workflow tool that orchestrates git worktrees and tmux
+brew "raine/workmux/workmux"
