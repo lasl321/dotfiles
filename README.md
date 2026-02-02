@@ -21,10 +21,17 @@ A feature-rich `.tmux.conf` utilizing [TPM](https://github.com/tmux-plugins/tpm)
 
 ### Terminal Emulators
 - **[Alacritty](./alacritty)**: Performance-focused terminal configuration.
-- **[Wezterm](./wezterm)**: Configuration for the highly customizable Wezterm terminal.
+- **[Wezterm](./wezterm)**: Configuration using the [Monaspace](https://monaspace.githubnext.com/) font family for consistent typography.
 
 ### [Git](./git)
 Global `.gitconfig` for consistent version control settings.
+
+### [Homebrew](./homebrew)
+A comprehensive `Brewfile` for managing macOS packages and applications. Includes:
+- **CLI Tools**: Neovim, Tmux, Lazygit, FZF, Ripgrep, Zoxide, and more.
+- **Development**: NVM, Minikube, Multipass, and [Workmux](https://github.com/raine/workmux) for managing git worktrees and tmux sessions.
+- **Fonts**: [Monaspace](https://monaspace.githubnext.com/) family for consistent terminal typography.
+- **macOS Utilities**: Dockutil for managing dock items.
 
 ## Repository Structure
 
@@ -32,6 +39,8 @@ Global `.gitconfig` for consistent version control settings.
 .
 ├── alacritty/      # Alacritty configuration
 ├── git/            # Git configuration
+├── homebrew/       # Homebrew package management
+│   └── Brewfile    # Package definitions for macOS
 ├── lazyvim/        # LazyVim settings
 ├── nvim/           # Neovim configuration
 │   └── lua/
@@ -52,4 +61,11 @@ ln -s ~/code/dotfiles/nvim ~/.config/nvim
 Example for Tmux:
 ```bash
 ln -s ~/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+```
+
+### Homebrew
+
+Install all packages from the Brewfile:
+```bash
+brew bundle --file ~/code/dotfiles/homebrew/Brewfile
 ```
