@@ -1,0 +1,6 @@
+[submodule "tmux/tmux-tools"]
+	path = tmux/tmux-tools
+	url = https://github.com/raine/tmux-tools.git
+[submodule "tmux/tmux-file-picker"]
+	path = tmux/tmux-file-picker
+	url = https://github.com/raine/tmux-file-picker.git
