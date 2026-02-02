@@ -28,10 +28,41 @@ Global `.gitconfig` for consistent version control settings.
 
 ### [Homebrew](./homebrew)
 A comprehensive `Brewfile` for managing macOS packages and applications. Includes:
-- **CLI Tools**: Neovim, Tmux, Lazygit, FZF, Ripgrep, Zoxide, and more.
-- **Development**: NVM, Minikube, Multipass, and [Workmux](https://github.com/raine/workmux) for managing git worktrees and tmux sessions.
-- **Fonts**: [Monaspace](https://monaspace.githubnext.com/) family for consistent terminal typography.
-- **macOS Utilities**: Dockutil for managing dock items.
+
+**CLI Tools**:
+- [Neovim](https://neovim.io/) - Modern Vim-fork focused on extensibility
+- [Tmux](https://github.com/tmux/tmux) - Terminal multiplexer
+- [Lazygit](https://github.com/jesseduffield/lazygit) - Simple terminal UI for git commands
+- [FZF](https://github.com/junegunn/fzf) - Command-line fuzzy finder
+- [Ripgrep](https://github.com/BurntSushi/ripgrep) - Fast search tool
+- [Zoxide](https://github.com/ajeetdsouza/zoxide) - Smart directory navigator
+- [FD](https://github.com/sharkdp/fd) - Fast and user-friendly alternative to `find`
+- [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) - Good-looking diffs
+- [GitHub CLI](https://cli.github.com/) - GitHub command-line tool
+- [Tree](https://oldmanprogrammer.net/source.php?dir=projects/tree) - Directory tree display
+- [Neofetch](https://github.com/dylanaraps/neofetch) - System info script
+
+**Development**:
+- [NVM](https://github.com/nvm-sh/nvm) - Node.js version manager
+- [Minikube](https://minikube.sigs.k8s.io/) - Local Kubernetes cluster
+- [Multipass](https://multipass.run/) - Ubuntu VM orchestration
+- [Workmux](https://github.com/raine/workmux) - Git worktrees and tmux session manager
+- [LuaRocks](https://luarocks.org/) - Lua package manager
+- [Ghostscript](https://www.ghostscript.com/) - PostScript/PDF interpreter
+- [ImageMagick](https://imagemagick.org/) - Image manipulation tools
+
+**Applications (Casks)**:
+- [Wezterm](https://wezfurlong.org/wezterm/) - GPU-accelerated terminal emulator
+- [Firefox](https://www.mozilla.org/firefox/) - Web browser
+- [Zoom](https://zoom.us/) - Video conferencing
+- [BasicTeX](https://www.tug.org/mactex/morepackages.html) - Compact TeX distribution
+- [Stats](https://github.com/exelban/stats) - System monitor for menu bar
+
+**Fonts**:
+- [Monaspace](https://monaspace.githubnext.com/) - GitHub's monospaced font family
+
+**macOS Utilities**:
+- [Dockutil](https://github.com/kcrawford/dockutil) - Dock management tool
 
 ## Repository Structure
 
