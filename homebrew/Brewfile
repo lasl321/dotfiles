@@ -57,4 +57,5 @@ brew "dockutil"
 # -----------
 
 # An opinionated workflow tool that orchestrates git worktrees and tmux
+tap "raine/workmux"
 brew "raine/workmux/workmux"
