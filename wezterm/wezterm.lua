@@ -10,7 +10,7 @@ config.term = "wezterm"
 -- Monaspace:  https://monaspace.githubnext.com/
 -- Based upon, contributed to:  https://gist.github.com/ErebusBat/9744f25f3735c1e0491f6ef7f3a9ddc3
 config.font = wezterm.font({ -- Normal text
-	family = "Monaspace Neon",
+	family = "Monaspace Neon NF",
 	harfbuzz_features = {
 		"calt",
 		"liga",
@@ -37,7 +37,7 @@ config.font_rules = {
 		intensity = "Normal",
 		italic = true,
 		font = wezterm.font({
-			family = "Monaspace Radon", -- script style
+			family = "Monaspace Radon NF", -- script style
 			-- family = "Monaspace Xenon", -- courier-like
 			style = "Italic",
 		}),
@@ -57,7 +57,7 @@ config.font_rules = {
 		intensity = "Bold",
 		italic = true,
 		font = wezterm.font({
-			family = "Monaspace Radon",
+			family = "Monaspace Radon NF",
 			style = "Italic",
 			weight = "Bold",
 		}),

@@ -35,7 +35,7 @@ cask "basictex"
 # Web browser
 cask "firefox"
 # GitHub Monaspace font
-cask "font-monaspace"
+cask "font-monaspace-nf"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
 # System monitor for the menu bar
