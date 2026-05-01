@@ -52,6 +52,9 @@ cask "zoom"
 # Tool for managing dock items
 brew "dockutil"
 
+# Media viewer
+cask "vlc"
+
 # -----------
 # Development
 # -----------
