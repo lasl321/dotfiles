@@ -68,3 +68,7 @@ cask "visual-studio-code"
 
 # JetBrains Toolbox
 cask "jetbrains-toolbox"
+
+# Opencode
+tap "anomalyco/tap"
+brew "anomalyco/tap/opencode"
