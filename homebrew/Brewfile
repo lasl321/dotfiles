@@ -72,3 +72,6 @@ cask "jetbrains-toolbox"
 # Opencode
 tap "anomalyco/tap"
 brew "anomalyco/tap/opencode"
+
+tap "fpigeonjr/homebrew-tap"
+brew "mfp"
