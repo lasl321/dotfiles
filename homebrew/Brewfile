@@ -73,7 +73,7 @@ cask "jetbrains-toolbox"
 tap "anomalyco/tap"
 brew "anomalyco/tap/opencode"
 
-# Add Music for Progamming
+# Music for programming
 tap "fpigeonjr/homebrew-tap"
 brew "mfp"
 
