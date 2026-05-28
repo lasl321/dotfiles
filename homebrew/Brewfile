@@ -79,3 +79,5 @@ brew "mfp"
 
 # Treesitter CLI for NeoVim
 brew "tree-sitter-cli"
+# UV for Python
+brew "uv"
