@@ -73,5 +73,9 @@ cask "jetbrains-toolbox"
 tap "anomalyco/tap"
 brew "anomalyco/tap/opencode"
 
+# Add Music for Progamming
 tap "fpigeonjr/homebrew-tap"
 brew "mfp"
+
+# Treesitter CLI for NeoVim
+brew "tree-sitter-cli"
