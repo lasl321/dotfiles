@@ -75,9 +75,10 @@ brew "anomalyco/tap/opencode"
 
 # Music for programming
 tap "fpigeonjr/homebrew-tap"
-brew "mfp"
+brew "fpigeonjr/homebrew-tap/mfp"
 
 # Treesitter CLI for NeoVim
 brew "tree-sitter-cli"
+
 # UV for Python
 brew "uv"
