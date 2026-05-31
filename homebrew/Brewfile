@@ -82,5 +82,6 @@ brew "tree-sitter-cli"
 
 # UV for Python
 brew "uv"
+
 # Ghostty terminal
 cask "ghostty"
