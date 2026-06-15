@@ -62,6 +62,9 @@ brew "fpigeonjr/homebrew-tap/mfp", trusted: true
 # Ghostty terminal
 cask "ghostty"
 
+# Password manager
+brew "pass"
+
 # -----------
 # Development
 # -----------
