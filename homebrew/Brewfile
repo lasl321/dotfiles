@@ -55,13 +55,20 @@ brew "dockutil"
 # Media viewer
 cask "vlc"
 
+# Music for programming
+tap "fpigeonjr/homebrew-tap"
+brew "fpigeonjr/homebrew-tap/mfp", trusted: true
+
+# Ghostty terminal
+cask "ghostty"
+
 # -----------
 # Development
 # -----------
 
 # An opinionated workflow tool that orchestrates git worktrees and tmux
 tap "raine/workmux"
-brew "raine/workmux/workmux"
+brew "raine/workmux/workmux", trusted: true
 
 # Visual Studio Code
 cask "visual-studio-code"
@@ -71,11 +78,7 @@ cask "jetbrains-toolbox"
 
 # Opencode
 tap "anomalyco/tap"
-brew "anomalyco/tap/opencode"
-
-# Music for programming
-tap "fpigeonjr/homebrew-tap"
-brew "fpigeonjr/homebrew-tap/mfp"
+brew "anomalyco/tap/opencode", trusted: true
 
 # Treesitter CLI for NeoVim
 brew "tree-sitter-cli"
@@ -83,5 +86,8 @@ brew "tree-sitter-cli"
 # UV for Python
 brew "uv"
 
-# Ghostty terminal
-cask "ghostty"
+# ---
+# Fun
+# ---
+
+brew "cmatrix"
