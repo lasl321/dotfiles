@@ -17,14 +17,24 @@ A feature-rich `.tmux.conf` utilizing [TPM](https://github.com/tmux-plugins/tpm)
 - **Catppuccin Theme**: Consistent mocha styling.
 - **Status Bar**: Displays CPU usage, battery status, weather, and uptime.
 - **Persistence**: Auto-saving and restoring sessions via `tmux-resurrect` and `tmux-continuum`.
-- **Popups**: Quick access to `lazygit` and a file picker within popups.
+- **Popups**: Quick access to `lazygit`, a `tmux-file-picker` popup, `tmux-zoxide-window`, and an `nvim-diary.sh` popup for quick notes.
+- **Submodules**: [tmux-file-picker](https://github.com/raine/tmux-file-picker) (fzf-based file path picker, handy for AI coding assistants) and [tmux-tools](https://github.com/raine/tmux-tools) (session switcher and zoxide-based session/window pickers) are vendored as git submodules.
 
 ### Terminal Emulators
 - **[Alacritty](./alacritty)**: Performance-focused terminal configuration.
 - **[Wezterm](./wezterm)**: Configuration using the [Monaspace](https://monaspace.githubnext.com/) font family for consistent typography.
+- **[Ghostty](./ghostty)**: TokyoNight theme, hidden title bar, and Monaspace Neon/Radon fonts with extended ligature/stylistic-set features.
 
 ### [Git](./git)
 Global `.gitconfig` for consistent version control settings.
+
+### [Opencode](./opencode)
+Custom subagent definitions for the [opencode](https://opencode.ai/) CLI, including agents for committing changes with Conventional Commits, writing documentation, code review, and security audits.
+
+### Tools
+- **[tools/nvim-diary.sh](./tools/nvim-diary.sh)**: Opens a timestamped daily note under `~/.diary` in `$EDITOR` (or Neovim), wired up to the tmux popup above.
+- **[setup-tmux-links.sh](./setup-tmux-links.sh)**: Symlinks `.tmux.conf` and the tmux/tools scripts into `~/.tmux.conf` and `~/.local/bin`.
+- **[GEMINI.md](./GEMINI.md)**: Instructs Gemini to follow [Conventional Commits](https://www.conventionalcommits.org/) when committing to this repo.
 
 ### [Homebrew](./homebrew)
 A comprehensive `Brewfile` for managing macOS packages and applications. Includes:
@@ -50,13 +60,22 @@ A comprehensive `Brewfile` for managing macOS packages and applications. Include
 - [LuaRocks](https://luarocks.org/) - Lua package manager
 - [Ghostscript](https://www.ghostscript.com/) - PostScript/PDF interpreter
 - [ImageMagick](https://imagemagick.org/) - Image manipulation tools
+- [UV](https://github.com/astral-sh/uv) - Fast Python package/project manager
+- [Tree-sitter CLI](https://github.com/tree-sitter/tree-sitter) - Parser generator used by Neovim's Tree-sitter integration
+- [Opencode](https://opencode.ai/) - AI coding agent CLI
+- [Claude Code](https://claude.com/claude-code) - Anthropic's AI coding agent CLI
+- [Pass](https://www.passwordstore.org/) - Standard Unix password manager
 
 **Applications (Casks)**:
 - [Wezterm](https://wezfurlong.org/wezterm/) - GPU-accelerated terminal emulator
+- [Ghostty](https://ghostty.org/) - Fast, native, GPU-accelerated terminal emulator
 - [Firefox](https://www.mozilla.org/firefox/) - Web browser
 - [Zoom](https://zoom.us/) - Video conferencing
 - [BasicTeX](https://www.tug.org/mactex/morepackages.html) - Compact TeX distribution
 - [Stats](https://github.com/exelban/stats) - System monitor for menu bar
+- [Visual Studio Code](https://code.visualstudio.com/) - Code editor
+- [JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/) - JetBrains IDE manager
+- [VLC](https://www.videolan.org/vlc/) - Media viewer
 
 **Fonts**:
 - [Monaspace](https://monaspace.githubnext.com/) - GitHub's monospaced font family
@@ -64,11 +83,16 @@ A comprehensive `Brewfile` for managing macOS packages and applications. Include
 **macOS Utilities**:
 - [Dockutil](https://github.com/kcrawford/dockutil) - Dock management tool
 
+**Fun**:
+- [mfp](https://github.com/fpigeonjr/mfp) - Music for programming, played from the terminal
+- [cmatrix](https://github.com/abishekvashok/cmatrix) - Terminal "Matrix" screensaver
+
 ## Repository Structure
 
 ```text
 .
 ├── alacritty/      # Alacritty configuration
+├── ghostty/        # Ghostty configuration
 ├── git/            # Git configuration
 ├── homebrew/       # Homebrew package management
 │   └── Brewfile    # Package definitions for macOS
@@ -76,11 +100,24 @@ A comprehensive `Brewfile` for managing macOS packages and applications. Include
 ├── nvim/           # Neovim configuration
 │   └── lua/
 │       └── plugins/ # Plugin-specific configurations
+├── opencode/       # Opencode subagent definitions
+│   └── agents/
 ├── tmux/           # Tmux configuration
-└── wezterm/        # Wezterm configuration
+│   ├── tmux-file-picker/ # Submodule: fzf file picker popup
+│   └── tmux-tools/       # Submodule: session/window switcher popups
+├── tools/          # Standalone helper scripts
+├── wezterm/        # Wezterm configuration
+├── GEMINI.md       # Commit conventions for Gemini
+├── LICENSE         # Unlicense (public domain)
+└── setup-tmux-links.sh # Symlinks tmux config/tools into place
 ```
 
 ## Setup
+
+Clone with submodules, since the tmux tools are vendored as git submodules:
+```bash
+git clone --recurse-submodules git@github.com:lasl321/dotfiles.git ~/code/dotfiles
+```
 
 Most configurations expect to be symlinked to their respective locations in `~/.config/` or `$HOME`.
 
@@ -89,10 +126,13 @@ Example for Neovim:
 ln -s ~/code/dotfiles/nvim ~/.config/nvim
 ```
 
-Example for Tmux:
+### Tmux
+
+Run the setup script to symlink `.tmux.conf` and put the tmux/tools scripts (`tmux-file-picker`, `tmux-session-switcher`, `tmux-zoxide-session`, `tmux-zoxide-window`, `nvim-diary.sh`) on your `PATH` via `~/.local/bin`:
 ```bash
-ln -s ~/code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+~/code/dotfiles/setup-tmux-links.sh
 ```
+Then install plugins from inside tmux with `prefix + I` ([TPM](https://github.com/tmux-plugins/tpm)).
 
 ### Homebrew
 
@@ -100,3 +140,7 @@ Install all packages from the Brewfile:
 ```bash
 brew bundle --file ~/code/dotfiles/homebrew/Brewfile
 ```
+
+## License
+
+Released into the public domain under [The Unlicense](./LICENSE).
