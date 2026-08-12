@@ -92,6 +92,9 @@ brew "uv"
 # Claude code
 cask "claude-code"
 
+# PostgreSQL
+brew "pgcli"
+
 # ---
 # Fun
 # ---
