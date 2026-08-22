@@ -4,8 +4,6 @@ brew "diff-so-fancy"
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GitHub command-line tool
-brew "gh"
 # Interpreter for PostScript and PDF
 brew "ghostscript"
 # Tools and libraries to manipulate images in select formats
@@ -14,14 +12,8 @@ brew "imagemagick"
 brew "lazygit"
 # Package manager for the Lua programming language
 brew "luarocks"
-# Run a Kubernetes cluster locally
-brew "minikube"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Manage multiple Node.js versions
-brew "nvm"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Terminal multiplexer
@@ -49,6 +41,9 @@ cask "zoom"
 # MacOS
 # -----
 
+# Shell 
+brew "fastfetch"
+
 # Tool for managing dock items
 brew "dockutil"
 
@@ -68,6 +63,12 @@ brew "pass"
 # -----------
 # Development
 # -----------
+
+# GitHub command-line tool
+brew "gh"
+
+# Manage multiple Node.js versions
+brew "nvm"
 
 # An opinionated workflow tool that orchestrates git worktrees and tmux
 tap "raine/workmux"
