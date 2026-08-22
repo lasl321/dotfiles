@@ -41,7 +41,10 @@ cask "zoom"
 # MacOS
 # -----
 
-# Shell 
+# Bluetooth helper (to connect AirPods)
+brew "blueutil"
+
+# Shell information (runs at shell startup via OMZ setup)
 brew "fastfetch"
 
 # Tool for managing dock items
