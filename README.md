@@ -31,6 +31,9 @@ Global `.gitconfig` for consistent version control settings.
 ### [Opencode](./opencode)
 Custom subagent definitions for the [opencode](https://opencode.ai/) CLI, including agents for committing changes with Conventional Commits, writing documentation, code review, and security audits.
 
+### [Claude Code](./claude)
+- **[claude/statusline-command.sh](./claude/statusline-command.sh)**: Custom status line showing the current directory, git branch, model name, remaining context window percentage, and 5-hour rate limit reset time.
+
 ### Tools
 - **[tools/nvim-diary.sh](./tools/nvim-diary.sh)**: Opens a timestamped daily note under `~/.diary` in `$EDITOR` (or Neovim), wired up to the tmux popup above.
 - **[setup-tmux-links.sh](./setup-tmux-links.sh)**: Symlinks `.tmux.conf` and the tmux/tools scripts into `~/.tmux.conf` and `~/.local/bin`.
@@ -92,6 +95,7 @@ A comprehensive `Brewfile` for managing macOS packages and applications. Include
 ```text
 .
 ├── alacritty/      # Alacritty configuration
+├── claude/         # Claude Code status line script
 ├── ghostty/        # Ghostty configuration
 ├── git/            # Git configuration
 ├── homebrew/       # Homebrew package management
@@ -139,6 +143,21 @@ Then install plugins from inside tmux with `prefix + I` ([TPM](https://github.co
 Install all packages from the Brewfile:
 ```bash
 brew bundle --file ~/code/dotfiles/homebrew/Brewfile
+```
+
+### Claude Code
+
+Symlink the status line script and point Claude Code's `settings.json` at it:
+```bash
+ln -s ~/code/dotfiles/claude/statusline-command.sh ~/.claude/statusline-command.sh
+```
+```json
+{
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  }
+}
 ```
 
 ## License
