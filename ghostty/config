@@ -1,6 +1,7 @@
 theme = TokyoNight
 
 background-opacity = 0.85
+keybind = cmd+u=toggle_background_opacity
 
 # Remove title bar
 macos-titlebar-style = hidden
