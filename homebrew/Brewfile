@@ -99,6 +99,9 @@ cask "claude-code"
 # PostgreSQL
 brew "pgcli"
 
+# Docker
+brew "lazydocker"
+
 # ---
 # Fun
 # ---
