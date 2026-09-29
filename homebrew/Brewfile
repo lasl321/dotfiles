@@ -24,8 +24,6 @@ brew "tree"
 brew "zoxide"
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
-# Web browser
-cask "firefox"
 # GitHub Monaspace font
 cask "font-monaspace-nf"
 # Orchestrates virtual Ubuntu instances
@@ -40,6 +38,10 @@ cask "zoom"
 # -----
 # MacOS
 # -----
+
+# Web browser
+cask "firefox"
+cask "librewolf"
 
 # Bluetooth helper (to connect AirPods)
 brew "blueutil"
