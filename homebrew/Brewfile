@@ -41,7 +41,6 @@ cask "zoom"
 
 # Web browser
 cask "firefox"
-cask "librewolf"
 
 # Bluetooth helper (to connect AirPods)
 brew "blueutil"
