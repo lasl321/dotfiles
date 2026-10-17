@@ -1,82 +1,53 @@
-# Good-lookin' diffs with diff-highlight and more
-brew "diff-so-fancy"
-# Simple, fast and user-friendly alternative to find
-brew "fd"
-# Command-line fuzzy finder written in Go
-brew "fzf"
-# Interpreter for PostScript and PDF
-brew "ghostscript"
-# Tools and libraries to manipulate images in select formats
-brew "imagemagick"
-# Simple terminal UI for git commands
-brew "lazygit"
-# Package manager for the Lua programming language
-brew "luarocks"
-# Ambitious Vim-fork focused on extensibility and agility
-brew "neovim"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# Terminal multiplexer
-brew "tmux"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
-# Shell extension to navigate your filesystem faster
-brew "zoxide"
-# Compact TeX distribution as alternative to the full TeX Live / MacTeX
-cask "basictex"
-# GitHub Monaspace font
-cask "font-monaspace-nf"
-# Orchestrates virtual Ubuntu instances
-cask "multipass"
-# System monitor for the menu bar
-cask "stats"
+# Taps are declared directly above the formula that needs them, so each group
+# is self-contained and groups can be reordered freely.
+
+# --------------------
+# Shell & Terminal
+# --------------------
+
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
-# Video communication and virtual meeting platform
-cask "zoom"
-
-# -----
-# MacOS
-# -----
-
-# Web browser
-cask "firefox"
-
-# Bluetooth helper (to connect AirPods)
-brew "blueutil"
-
-# Shell information (runs at shell startup via OMZ setup)
-brew "fastfetch"
-
-# Tool for managing dock items
-brew "dockutil"
-
-# Media viewer
-cask "vlc"
-
-# Music for programming
-tap "fpigeonjr/homebrew-tap"
-brew "fpigeonjr/homebrew-tap/mfp", trusted: true
 
 # Ghostty terminal
 cask "ghostty"
 
-# Password manager
-brew "pass"
+# Terminal multiplexer
+brew "tmux"
 
-# -----------
-# Development
-# -----------
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 
-# GitHub command-line tool
-brew "gh"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 
-# Manage multiple Node.js versions
-brew "nvm"
+# Shell information (runs at shell startup via OMZ setup)
+brew "fastfetch"
 
-# An opinionated workflow tool that orchestrates git worktrees and tmux
-tap "raine/workmux"
-brew "raine/workmux/workmux", trusted: true
+# -------------
+# CLI Utilities
+# -------------
+
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+
+# ----------------
+# Editors & IDEs
+# ----------------
+
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+
+# Treesitter CLI for NeoVim
+brew "tree-sitter-cli"
+
+# Package manager for the Lua programming language (used by NeoVim plugins)
+brew "luarocks"
 
 # Visual Studio Code
 cask "visual-studio-code"
@@ -84,23 +55,109 @@ cask "visual-studio-code"
 # JetBrains Toolbox
 cask "jetbrains-toolbox"
 
-# Treesitter CLI for NeoVim
-brew "tree-sitter-cli"
+# --------------
+# Git & GitHub
+# --------------
+
+# GitHub command-line tool
+brew "gh"
+
+# Simple terminal UI for git commands
+brew "lazygit"
+
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+
+# An opinionated workflow tool that orchestrates git worktrees and tmux
+tap "raine/workmux"
+brew "raine/workmux/workmux", trusted: true
+
+# ----------------------
+# Languages & Runtimes
+# ----------------------
+
+# Manage multiple Node.js versions
+brew "nvm"
 
 # UV for Python
 brew "uv"
 
-# Claude code
-cask "claude-code"
+# ------------------------------------
+# Containers, VMs & Databases
+# ------------------------------------
+
+# Orchestrates virtual Ubuntu instances
+cask "multipass"
+
+# Docker
+brew "lazydocker"
 
 # PostgreSQL
 brew "pgcli"
 
-# Docker
-brew "lazydocker"
+# ----------
+# AI Tooling
+# ----------
+
+# Claude code
+cask "claude-code"
+
+# -------------------
+# Documents & Media
+# -------------------
+
+# Compact TeX distribution as alternative to the full TeX Live / MacTeX
+cask "basictex"
+
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+
+# Media viewer
+cask "vlc"
+
+# -----
+# Fonts
+# -----
+
+# GitHub Monaspace font
+cask "font-monaspace-nf"
+
+# -----------------
+# macOS Utilities
+# -----------------
+
+# Bluetooth helper (to connect AirPods)
+brew "blueutil"
+
+# Tool for managing dock items
+brew "dockutil"
+
+# System monitor for the menu bar
+cask "stats"
+
+# Password manager
+brew "pass"
+
+# ----
+# Apps
+# ----
+
+# Web browser
+cask "firefox"
+
+# Video communication and virtual meeting platform
+cask "zoom"
 
 # ---
 # Fun
 # ---
 
+# Terminal matrix screensaver
 brew "cmatrix"
+
+# Music for programming
+tap "fpigeonjr/homebrew-tap"
+brew "fpigeonjr/homebrew-tap/mfp", trusted: true
