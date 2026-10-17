@@ -20,9 +20,6 @@ brew "zoxide"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 
-# Shell information (runs at shell startup via OMZ setup)
-brew "fastfetch"
-
 # -------------
 # CLI Utilities
 # -------------
@@ -35,6 +32,12 @@ brew "ripgrep"
 
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+
+# Shell information (runs at shell startup via OMZ setup)
+brew "fastfetch"
+
+# Command-line password manager (GPG-encrypted password store)
+brew "pass"
 
 # ----------------
 # Editors & IDEs
@@ -137,9 +140,6 @@ brew "dockutil"
 
 # System monitor for the menu bar
 cask "stats"
-
-# Command-line password manager (GPG-encrypted password store)
-brew "pass"
 
 # ----
 # Apps
