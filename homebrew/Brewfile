@@ -1,9 +1,9 @@
 # Taps are declared directly above the formula that needs them, so each group
 # is self-contained and groups can be reordered freely.
 
-# --------------------
+# ----------------
 # Shell & Terminal
-# --------------------
+# ----------------
 
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
@@ -39,9 +39,9 @@ brew "fastfetch"
 # Command-line password manager (GPG-encrypted password store)
 brew "pass"
 
-# ----------------
+# --------------
 # Editors & IDEs
-# ----------------
+# --------------
 
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
@@ -58,9 +58,9 @@ cask "visual-studio-code"
 # App for installing and updating JetBrains IDEs
 cask "jetbrains-toolbox"
 
-# --------------
+# ------------
 # Git & GitHub
-# --------------
+# ------------
 
 # GitHub command-line tool
 brew "gh"
@@ -75,9 +75,9 @@ brew "diff-so-fancy"
 tap "raine/workmux"
 brew "raine/workmux/workmux", trusted: true
 
-# ----------------------
+# --------------------
 # Languages & Runtimes
-# ----------------------
+# --------------------
 
 # Manage multiple Node.js versions
 brew "nvm"
@@ -85,9 +85,9 @@ brew "nvm"
 # Fast Python package and project manager
 brew "uv"
 
-# ------------------------------------
+# ---------------------------
 # Containers, VMs & Databases
-# ------------------------------------
+# ---------------------------
 
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
@@ -105,9 +105,9 @@ brew "pgcli"
 # Anthropic's agentic coding tool for the terminal
 cask "claude-code"
 
-# -------------------
+# -----------------
 # Documents & Media
-# -------------------
+# -----------------
 
 # Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
@@ -128,9 +128,9 @@ cask "vlc"
 # GitHub Monaspace font
 cask "font-monaspace-nf"
 
-# -----------------
+# ---------------
 # macOS Utilities
-# -----------------
+# ---------------
 
 # Bluetooth helper (to connect AirPods)
 brew "blueutil"
