@@ -84,10 +84,6 @@ cask "visual-studio-code"
 # JetBrains Toolbox
 cask "jetbrains-toolbox"
 
-# Opencode
-tap "anomalyco/tap"
-brew "anomalyco/tap/opencode", trusted: true
-
 # Treesitter CLI for NeoVim
 brew "tree-sitter-cli"
 

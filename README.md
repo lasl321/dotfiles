@@ -65,7 +65,6 @@ A comprehensive `Brewfile` for managing macOS packages and applications. Include
 - [ImageMagick](https://imagemagick.org/) - Image manipulation tools
 - [UV](https://github.com/astral-sh/uv) - Fast Python package/project manager
 - [Tree-sitter CLI](https://github.com/tree-sitter/tree-sitter) - Parser generator used by Neovim's Tree-sitter integration
-- [Opencode](https://opencode.ai/) - AI coding agent CLI
 - [Claude Code](https://claude.com/claude-code) - Anthropic's AI coding agent CLI
 - [Pass](https://www.passwordstore.org/) - Standard Unix password manager
 
