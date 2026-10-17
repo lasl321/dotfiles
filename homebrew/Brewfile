@@ -8,7 +8,7 @@
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 
-# Ghostty terminal
+# GPU-accelerated terminal emulator focused on speed and native UI
 cask "ghostty"
 
 # Terminal multiplexer
@@ -49,10 +49,10 @@ brew "tree-sitter-cli"
 # Package manager for the Lua programming language (used by NeoVim plugins)
 brew "luarocks"
 
-# Visual Studio Code
+# Extensible source-code editor from Microsoft
 cask "visual-studio-code"
 
-# JetBrains Toolbox
+# App for installing and updating JetBrains IDEs
 cask "jetbrains-toolbox"
 
 # --------------
@@ -79,7 +79,7 @@ brew "raine/workmux/workmux", trusted: true
 # Manage multiple Node.js versions
 brew "nvm"
 
-# UV for Python
+# Fast Python package and project manager
 brew "uv"
 
 # ------------------------------------
@@ -89,17 +89,17 @@ brew "uv"
 # Orchestrates virtual Ubuntu instances
 cask "multipass"
 
-# Docker
+# Terminal UI for managing Docker containers and images
 brew "lazydocker"
 
-# PostgreSQL
+# Postgres CLI client with autocompletion and syntax highlighting
 brew "pgcli"
 
 # ----------
 # AI Tooling
 # ----------
 
-# Claude code
+# Anthropic's agentic coding tool for the terminal
 cask "claude-code"
 
 # -------------------
@@ -138,7 +138,7 @@ brew "dockutil"
 # System monitor for the menu bar
 cask "stats"
 
-# Password manager
+# Command-line password manager (GPG-encrypted password store)
 brew "pass"
 
 # ----
