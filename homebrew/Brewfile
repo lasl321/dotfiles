@@ -119,6 +119,7 @@ brew "ghostscript"
 brew "imagemagick"
 
 # PDF rendering library and command-line utilities (pdftotext, pdftoppm, etc.)
+# Added to validate generated PDFs in Claude Skills/Agents
 brew "poppler"
 
 # Media viewer
