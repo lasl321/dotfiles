@@ -118,6 +118,9 @@ brew "ghostscript"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 
+# PDF rendering library and command-line utilities (pdftotext, pdftoppm, etc.)
+brew "poppler"
+
 # Media viewer
 cask "vlc"
 
